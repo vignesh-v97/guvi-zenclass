@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>areBothOdd</title>
+</head>
+<body>
+    <input type="number" id="firstValue">
+    <input type="number" id="secondValue">
+    <input type="button" value="Submit" id="call">
+    <input type="text" id="result">
+    <script>
+        var button = document.getElementById('call');
+        button.addEventListener("click",
+        function()
+        {
+            var one = document.getElementById("firstValue").value;
+            var two = document.getElementById("secondValue").value;
+            if(one%2!==0 && two%2!==0)
+            {
+                document.getElementById('result').value = "areBothOdd";
+            }
+            else if(one%2==0 && two%2==0)
+            {
+                document.getElementById('result').value = "areBothEven";
+
+            }
+            else
+            {
+                document.getElementById('result').value = "mismatched values";
+
+            }
+        }
+        )
+    </script>
+</body>
+</html>

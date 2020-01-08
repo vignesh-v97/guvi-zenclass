@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>isSameLength</title>
+</head>
+<body>
+    <input type="text" id="firstValue">
+    <input type="text" id="secondValue">
+    <input type="button" value="Submit" id="call">
+    <input type="text" id="result">
+    <script>
+        var button = document.getElementById("call");
+        button.addEventListener("click",
+        function isSameLength()
+        {
+            var one = parseInt(document.getElementById("firstValue").value.length);
+            var two = parseInt(document.getElementById("secondValue").value.length);
+            if(one == two)
+            {
+                document.getElementById("result").value = "isSameLength"
+            }
+            else
+            {
+                document.getElementById("result").value = "isMismatched"
+
+            }
+        }
+        )
+    </script>
+
+</body>
+</html>

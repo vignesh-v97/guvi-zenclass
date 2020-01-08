@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>getFullName</title>
+</head>
+<body>
+    <input type="text" id="firstName">
+    <input type="text" id="secondName">
+    <input type="button" value="Submit" id="submit">
+    <input type="text" id="result">
+    <script>
+        var button = document.getElementById("submit");
+        button.addEventListener("click",
+        function()
+        {
+            var one = document.getElementById("firstName").value;
+            var two = document.getElementById("secondName").value;
+            document.getElementById("result").value=(one+" "+two);
+        }
+        )
+    </script>
+
+</body>
+</html>
